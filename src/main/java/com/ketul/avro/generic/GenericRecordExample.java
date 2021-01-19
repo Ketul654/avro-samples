@@ -23,25 +23,22 @@ public class GenericRecordExample {
         Schema employeeSchema = getSchema();
 
         // Create a generic record
-
         GenericData.Record employee = getEmployee(employeeSchema);
-
         LOGGER.info(employee.toString());
 
         // Write generic record to a file
-        GenericRecordExample example = new GenericRecordExample();
-        File file = new File("target//employee.avro");
-        boolean isWritten = example.writeToFile(file, employee);
+        File file = new File("target//generic-employee.avro");
+        boolean isWritten = writeToFile(file, employee);
 
         if(isWritten) {
             // Read from file
-            List<GenericRecord> employeeRecords = example.readFromFile(file);
+            List<GenericRecord> employeeRecords = readFromFile(file);
             employeeRecords.forEach((employeeRecord -> LOGGER.info(employeeRecord.toString())));
         }
 
     }
 
-    private List<GenericRecord> readFromFile(File file) {
+    private static List<GenericRecord> readFromFile(File file) {
         LOGGER.info("Reading from file {}", file.getAbsolutePath());
         DatumReader<GenericRecord> datumReader = new GenericDatumReader<>();
         List<GenericRecord> employees = new ArrayList<>();
@@ -56,7 +53,7 @@ public class GenericRecordExample {
         return employees;
     }
 
-    private boolean writeToFile(File file, GenericData.Record employee) {
+    private static boolean writeToFile(File file, GenericData.Record employee) {
         LOGGER.info("Writing from file {}", file.getAbsolutePath());
         DatumWriter<GenericRecord> datumWriter = new GenericDatumWriter<>();
         try(DataFileWriter<GenericRecord> employeeDataWriter = new DataFileWriter<>(datumWriter)) {

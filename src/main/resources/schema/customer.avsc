@@ -32,7 +32,7 @@
         {
             "name": "is_permanent",
             "type": "boolean",
-            "default": "true",
+            "default": true,
             "doc": "Is employee permanent ?"
         }
     ]
