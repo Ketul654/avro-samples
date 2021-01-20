@@ -1,7 +1,5 @@
 package com.ketul.avro.evolution;
 
-import com.ketul.avro.schema.EmployeeV1;
-import com.ketul.avro.schema.EmployeeV2;
 import com.ketul.avro.schema.EmployeeV3;
 import com.ketul.avro.schema.EmployeeV4;
 import org.apache.avro.file.DataFileReader;
