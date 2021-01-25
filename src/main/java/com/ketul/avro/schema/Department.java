@@ -6,8 +6,8 @@
 package com.ketul.avro.schema;
 @org.apache.avro.specific.AvroGenerated
 public enum Department implements org.apache.avro.generic.GenericEnumSymbol<Department> {
-  COMPUTER, MECHANICAL, ELECTRICAL  ;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"enum\",\"name\":\"Department\",\"namespace\":\"com.ketul.avro.schema\",\"symbols\":[\"COMPUTER\",\"MECHANICAL\",\"ELECTRICAL\"]}");
+  COMPUTER  ;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"enum\",\"name\":\"Department\",\"namespace\":\"com.ketul.avro.schema\",\"symbols\":[\"COMPUTER\"]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
 }

@@ -14,24 +14,24 @@ import org.apache.avro.message.SchemaStore;
 
 /** This is Avro schema for Employee */
 @org.apache.avro.specific.AvroGenerated
-public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5977435685701278422L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"EmployeeV5\",\"namespace\":\"com.ketul.avro.schema\",\"doc\":\"This is Avro schema for Employee\",\"fields\":[{\"name\":\"employee_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"Employee Id\"},{\"name\":\"fist_name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"First name of the employee\"},{\"name\":\"last_name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"Last name of the employee\"},{\"name\":\"age\",\"type\":\"int\",\"doc\":\"Age of the employee\"},{\"name\":\"salary\",\"type\":\"float\",\"doc\":\"Salary\"},{\"name\":\"department\",\"type\":{\"type\":\"enum\",\"name\":\"Department\",\"symbols\":[\"COMPUTER\"]},\"doc\":\"Employee department\"},{\"name\":\"hobbies\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":[]},\"doc\":\"Employee hobbies\"},{\"name\":\"sex\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"Employee's sex\",\"default\":null},{\"name\":\"secret_questions\",\"type\":{\"type\":\"map\",\"values\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"avro.java.string\":\"String\",\"default\":{}},\"doc\":\"Employee secret questions\"}]}");
+public class EmployeeV6 extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
+  private static final long serialVersionUID = -1070988025182154660L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"EmployeeV6\",\"namespace\":\"com.ketul.avro.schema\",\"doc\":\"This is Avro schema for Employee\",\"fields\":[{\"name\":\"employee_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"Employee Id\"},{\"name\":\"fist_name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"First name of the employee\"},{\"name\":\"last_name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"Last name of the employee\"},{\"name\":\"age\",\"type\":\"int\",\"doc\":\"Age of the employee\"},{\"name\":\"salary\",\"type\":\"float\",\"doc\":\"Salary\"},{\"name\":\"department\",\"type\":{\"type\":\"enum\",\"name\":\"Department\",\"symbols\":[\"COMPUTER\"]},\"doc\":\"Employee department\"},{\"name\":\"hobbies\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":[]},\"doc\":\"Employee hobbies\"},{\"name\":\"sex\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"Employee's sex\",\"default\":null},{\"name\":\"secret_questions\",\"type\":{\"type\":\"map\",\"values\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"avro.java.string\":\"String\",\"default\":{}},\"doc\":\"Employee secret questions\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
 
-  private static final BinaryMessageEncoder<EmployeeV5> ENCODER =
-      new BinaryMessageEncoder<EmployeeV5>(MODEL$, SCHEMA$);
+  private static final BinaryMessageEncoder<EmployeeV6> ENCODER =
+      new BinaryMessageEncoder<EmployeeV6>(MODEL$, SCHEMA$);
 
-  private static final BinaryMessageDecoder<EmployeeV5> DECODER =
-      new BinaryMessageDecoder<EmployeeV5>(MODEL$, SCHEMA$);
+  private static final BinaryMessageDecoder<EmployeeV6> DECODER =
+      new BinaryMessageDecoder<EmployeeV6>(MODEL$, SCHEMA$);
 
   /**
    * Return the BinaryMessageEncoder instance used by this class.
    * @return the message encoder used by this class
    */
-  public static BinaryMessageEncoder<EmployeeV5> getEncoder() {
+  public static BinaryMessageEncoder<EmployeeV6> getEncoder() {
     return ENCODER;
   }
 
@@ -39,7 +39,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
    * Return the BinaryMessageDecoder instance used by this class.
    * @return the message decoder used by this class
    */
-  public static BinaryMessageDecoder<EmployeeV5> getDecoder() {
+  public static BinaryMessageDecoder<EmployeeV6> getDecoder() {
     return DECODER;
   }
 
@@ -48,12 +48,12 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
    * @param resolver a {@link SchemaStore} used to find schemas by fingerprint
    * @return a BinaryMessageDecoder instance for this class backed by the given SchemaStore
    */
-  public static BinaryMessageDecoder<EmployeeV5> createDecoder(SchemaStore resolver) {
-    return new BinaryMessageDecoder<EmployeeV5>(MODEL$, SCHEMA$, resolver);
+  public static BinaryMessageDecoder<EmployeeV6> createDecoder(SchemaStore resolver) {
+    return new BinaryMessageDecoder<EmployeeV6>(MODEL$, SCHEMA$, resolver);
   }
 
   /**
-   * Serializes this EmployeeV5 to a ByteBuffer.
+   * Serializes this EmployeeV6 to a ByteBuffer.
    * @return a buffer holding the serialized data for this instance
    * @throws java.io.IOException if this instance could not be serialized
    */
@@ -62,12 +62,12 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
-   * Deserializes a EmployeeV5 from a ByteBuffer.
+   * Deserializes a EmployeeV6 from a ByteBuffer.
    * @param b a byte buffer holding serialized data for an instance of this class
-   * @return a EmployeeV5 instance decoded from the given buffer
+   * @return a EmployeeV6 instance decoded from the given buffer
    * @throws java.io.IOException if the given bytes could not be deserialized into an instance of this class
    */
-  public static EmployeeV5 fromByteBuffer(
+  public static EmployeeV6 fromByteBuffer(
       java.nio.ByteBuffer b) throws java.io.IOException {
     return DECODER.decode(b);
   }
@@ -96,7 +96,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
    * to their default values from the schema.  If that is desired then
    * one should use <code>newBuilder()</code>.
    */
-  public EmployeeV5() {}
+  public EmployeeV6() {}
 
   /**
    * All-args constructor.
@@ -110,7 +110,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
    * @param sex Employee's sex
    * @param secret_questions Employee secret questions
    */
-  public EmployeeV5(java.lang.String employee_id, java.lang.String fist_name, java.lang.String last_name, java.lang.Integer age, java.lang.Float salary, com.ketul.avro.schema.Department department, java.util.List<java.lang.String> hobbies, java.lang.String sex, java.util.Map<java.lang.String,java.lang.String> secret_questions) {
+  public EmployeeV6(java.lang.String employee_id, java.lang.String fist_name, java.lang.String last_name, java.lang.Integer age, java.lang.Float salary, com.ketul.avro.schema.Department department, java.util.List<java.lang.String> hobbies, java.lang.String sex, java.util.Map<java.lang.String,java.lang.String> secret_questions) {
     this.employee_id = employee_id;
     this.fist_name = fist_name;
     this.last_name = last_name;
@@ -248,45 +248,45 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
 
 
   /**
-   * Creates a new EmployeeV5 RecordBuilder.
-   * @return A new EmployeeV5 RecordBuilder
+   * Creates a new EmployeeV6 RecordBuilder.
+   * @return A new EmployeeV6 RecordBuilder
    */
-  public static com.ketul.avro.schema.EmployeeV5.Builder newBuilder() {
-    return new com.ketul.avro.schema.EmployeeV5.Builder();
+  public static com.ketul.avro.schema.EmployeeV6.Builder newBuilder() {
+    return new com.ketul.avro.schema.EmployeeV6.Builder();
   }
 
   /**
-   * Creates a new EmployeeV5 RecordBuilder by copying an existing Builder.
+   * Creates a new EmployeeV6 RecordBuilder by copying an existing Builder.
    * @param other The existing builder to copy.
-   * @return A new EmployeeV5 RecordBuilder
+   * @return A new EmployeeV6 RecordBuilder
    */
-  public static com.ketul.avro.schema.EmployeeV5.Builder newBuilder(com.ketul.avro.schema.EmployeeV5.Builder other) {
+  public static com.ketul.avro.schema.EmployeeV6.Builder newBuilder(com.ketul.avro.schema.EmployeeV6.Builder other) {
     if (other == null) {
-      return new com.ketul.avro.schema.EmployeeV5.Builder();
+      return new com.ketul.avro.schema.EmployeeV6.Builder();
     } else {
-      return new com.ketul.avro.schema.EmployeeV5.Builder(other);
+      return new com.ketul.avro.schema.EmployeeV6.Builder(other);
     }
   }
 
   /**
-   * Creates a new EmployeeV5 RecordBuilder by copying an existing EmployeeV5 instance.
+   * Creates a new EmployeeV6 RecordBuilder by copying an existing EmployeeV6 instance.
    * @param other The existing instance to copy.
-   * @return A new EmployeeV5 RecordBuilder
+   * @return A new EmployeeV6 RecordBuilder
    */
-  public static com.ketul.avro.schema.EmployeeV5.Builder newBuilder(com.ketul.avro.schema.EmployeeV5 other) {
+  public static com.ketul.avro.schema.EmployeeV6.Builder newBuilder(com.ketul.avro.schema.EmployeeV6 other) {
     if (other == null) {
-      return new com.ketul.avro.schema.EmployeeV5.Builder();
+      return new com.ketul.avro.schema.EmployeeV6.Builder();
     } else {
-      return new com.ketul.avro.schema.EmployeeV5.Builder(other);
+      return new com.ketul.avro.schema.EmployeeV6.Builder(other);
     }
   }
 
   /**
-   * RecordBuilder for EmployeeV5 instances.
+   * RecordBuilder for EmployeeV6 instances.
    */
   @org.apache.avro.specific.AvroGenerated
-  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<EmployeeV5>
-    implements org.apache.avro.data.RecordBuilder<EmployeeV5> {
+  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<EmployeeV6>
+    implements org.apache.avro.data.RecordBuilder<EmployeeV6> {
 
     /** Employee Id */
     private java.lang.String employee_id;
@@ -316,7 +316,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.ketul.avro.schema.EmployeeV5.Builder other) {
+    private Builder(com.ketul.avro.schema.EmployeeV6.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.employee_id)) {
         this.employee_id = data().deepCopy(fields()[0].schema(), other.employee_id);
@@ -357,10 +357,10 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
     }
 
     /**
-     * Creates a Builder by copying an existing EmployeeV5 instance
+     * Creates a Builder by copying an existing EmployeeV6 instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.ketul.avro.schema.EmployeeV5 other) {
+    private Builder(com.ketul.avro.schema.EmployeeV6 other) {
       super(SCHEMA$);
       if (isValidValue(fields()[0], other.employee_id)) {
         this.employee_id = data().deepCopy(fields()[0].schema(), other.employee_id);
@@ -416,7 +416,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'employee_id'.
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder setEmployeeId(java.lang.String value) {
+    public com.ketul.avro.schema.EmployeeV6.Builder setEmployeeId(java.lang.String value) {
       validate(fields()[0], value);
       this.employee_id = value;
       fieldSetFlags()[0] = true;
@@ -438,7 +438,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * Employee Id
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder clearEmployeeId() {
+    public com.ketul.avro.schema.EmployeeV6.Builder clearEmployeeId() {
       employee_id = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -460,7 +460,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'fist_name'.
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder setFistName(java.lang.String value) {
+    public com.ketul.avro.schema.EmployeeV6.Builder setFistName(java.lang.String value) {
       validate(fields()[1], value);
       this.fist_name = value;
       fieldSetFlags()[1] = true;
@@ -482,7 +482,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * First name of the employee
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder clearFistName() {
+    public com.ketul.avro.schema.EmployeeV6.Builder clearFistName() {
       fist_name = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -504,7 +504,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'last_name'.
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder setLastName(java.lang.String value) {
+    public com.ketul.avro.schema.EmployeeV6.Builder setLastName(java.lang.String value) {
       validate(fields()[2], value);
       this.last_name = value;
       fieldSetFlags()[2] = true;
@@ -526,7 +526,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * Last name of the employee
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder clearLastName() {
+    public com.ketul.avro.schema.EmployeeV6.Builder clearLastName() {
       last_name = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -548,7 +548,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'age'.
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder setAge(int value) {
+    public com.ketul.avro.schema.EmployeeV6.Builder setAge(int value) {
       validate(fields()[3], value);
       this.age = value;
       fieldSetFlags()[3] = true;
@@ -570,7 +570,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * Age of the employee
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder clearAge() {
+    public com.ketul.avro.schema.EmployeeV6.Builder clearAge() {
       fieldSetFlags()[3] = false;
       return this;
     }
@@ -591,7 +591,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'salary'.
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder setSalary(float value) {
+    public com.ketul.avro.schema.EmployeeV6.Builder setSalary(float value) {
       validate(fields()[4], value);
       this.salary = value;
       fieldSetFlags()[4] = true;
@@ -613,7 +613,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * Salary
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder clearSalary() {
+    public com.ketul.avro.schema.EmployeeV6.Builder clearSalary() {
       fieldSetFlags()[4] = false;
       return this;
     }
@@ -634,7 +634,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'department'.
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder setDepartment(com.ketul.avro.schema.Department value) {
+    public com.ketul.avro.schema.EmployeeV6.Builder setDepartment(com.ketul.avro.schema.Department value) {
       validate(fields()[5], value);
       this.department = value;
       fieldSetFlags()[5] = true;
@@ -656,7 +656,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * Employee department
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder clearDepartment() {
+    public com.ketul.avro.schema.EmployeeV6.Builder clearDepartment() {
       department = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -678,7 +678,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'hobbies'.
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder setHobbies(java.util.List<java.lang.String> value) {
+    public com.ketul.avro.schema.EmployeeV6.Builder setHobbies(java.util.List<java.lang.String> value) {
       validate(fields()[6], value);
       this.hobbies = value;
       fieldSetFlags()[6] = true;
@@ -700,7 +700,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * Employee hobbies
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder clearHobbies() {
+    public com.ketul.avro.schema.EmployeeV6.Builder clearHobbies() {
       hobbies = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -722,7 +722,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'sex'.
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder setSex(java.lang.String value) {
+    public com.ketul.avro.schema.EmployeeV6.Builder setSex(java.lang.String value) {
       validate(fields()[7], value);
       this.sex = value;
       fieldSetFlags()[7] = true;
@@ -744,7 +744,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * Employee's sex
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder clearSex() {
+    public com.ketul.avro.schema.EmployeeV6.Builder clearSex() {
       sex = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -766,7 +766,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'secret_questions'.
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder setSecretQuestions(java.util.Map<java.lang.String,java.lang.String> value) {
+    public com.ketul.avro.schema.EmployeeV6.Builder setSecretQuestions(java.util.Map<java.lang.String,java.lang.String> value) {
       validate(fields()[8], value);
       this.secret_questions = value;
       fieldSetFlags()[8] = true;
@@ -788,7 +788,7 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
       * Employee secret questions
       * @return This builder.
       */
-    public com.ketul.avro.schema.EmployeeV5.Builder clearSecretQuestions() {
+    public com.ketul.avro.schema.EmployeeV6.Builder clearSecretQuestions() {
       secret_questions = null;
       fieldSetFlags()[8] = false;
       return this;
@@ -796,9 +796,9 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
 
     @Override
     @SuppressWarnings("unchecked")
-    public EmployeeV5 build() {
+    public EmployeeV6 build() {
       try {
-        EmployeeV5 record = new EmployeeV5();
+        EmployeeV6 record = new EmployeeV6();
         record.employee_id = fieldSetFlags()[0] ? this.employee_id : (java.lang.String) defaultValue(fields()[0]);
         record.fist_name = fieldSetFlags()[1] ? this.fist_name : (java.lang.String) defaultValue(fields()[1]);
         record.last_name = fieldSetFlags()[2] ? this.last_name : (java.lang.String) defaultValue(fields()[2]);
@@ -818,8 +818,8 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   @SuppressWarnings("unchecked")
-  private static final org.apache.avro.io.DatumWriter<EmployeeV5>
-    WRITER$ = (org.apache.avro.io.DatumWriter<EmployeeV5>)MODEL$.createDatumWriter(SCHEMA$);
+  private static final org.apache.avro.io.DatumWriter<EmployeeV6>
+    WRITER$ = (org.apache.avro.io.DatumWriter<EmployeeV6>)MODEL$.createDatumWriter(SCHEMA$);
 
   @Override public void writeExternal(java.io.ObjectOutput out)
     throws java.io.IOException {
@@ -827,8 +827,8 @@ public class EmployeeV5 extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   @SuppressWarnings("unchecked")
-  private static final org.apache.avro.io.DatumReader<EmployeeV5>
-    READER$ = (org.apache.avro.io.DatumReader<EmployeeV5>)MODEL$.createDatumReader(SCHEMA$);
+  private static final org.apache.avro.io.DatumReader<EmployeeV6>
+    READER$ = (org.apache.avro.io.DatumReader<EmployeeV6>)MODEL$.createDatumReader(SCHEMA$);
 
   @Override public void readExternal(java.io.ObjectInput in)
     throws java.io.IOException {

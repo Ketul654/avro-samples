@@ -1,0 +1,66 @@
+{
+    "type" : "record",
+    "namespace" : "com.ketul.avro.schema",
+    "name" : "EmployeeV6",
+    "doc" : "This is Avro schema for Employee",
+    "fields" : [
+        {
+            "name": "employee_id",
+            "type": "string",
+            "doc": "Employee Id"
+        },
+        {
+            "name": "fist_name",
+            "type": "string",
+            "doc": "First name of the employee"
+        },
+        {
+            "name": "last_name",
+            "type": "string",
+            "doc": "Last name of the employee"
+        },
+        {
+            "name": "age",
+            "type": "int",
+            "doc": "Age of the employee"
+        },
+        {
+            "name": "salary",
+            "type": "float",
+            "doc": "Salary"
+        },
+        {
+            "name": "department",
+            "type": {
+                "name" : "Department",
+                "type" : "enum",
+                "symbols" : ["COMPUTER"]
+            },
+            "doc" : "Employee department"
+        },
+        {
+            "name": "hobbies",
+            "type": {
+                "type" : "array",
+                "items" : "string",
+                "default" : []
+            },
+            "doc": "Employee hobbies"
+        },
+        {
+            "name": "sex",
+            "type": ["null", "string"],
+            "doc": "Employee's sex",
+            "default" : null
+        },
+        {
+            "name": "secret_questions",
+            "type": {
+                "type" : "map",
+                "values" : "string",
+                "default" : {}
+            },
+            "doc": "Employee secret questions"
+        }
+    ]
+}
