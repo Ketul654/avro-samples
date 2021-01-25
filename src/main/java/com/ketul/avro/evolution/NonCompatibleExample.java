@@ -61,12 +61,12 @@ public class NonCompatibleExample {
         return employees;
     }
 
-    private static boolean writeToFile(File file, EmployeeV5 employeeV4) {
-        LOGGER.info("Writing from file {} using schema V4", file.getAbsolutePath());
+    private static boolean writeToFile(File file, EmployeeV5 employeeV5) {
+        LOGGER.info("Writing from file {} using schema V5", file.getAbsolutePath());
         DatumWriter<EmployeeV5> datumWriter = new SpecificDatumWriter<>();
         try(DataFileWriter<EmployeeV5> employeeDataWriter = new DataFileWriter<>(datumWriter)) {
-            employeeDataWriter.create(employeeV4.getSchema(), file);
-            employeeDataWriter.append(employeeV4);
+            employeeDataWriter.create(employeeV5.getSchema(), file);
+            employeeDataWriter.append(employeeV5);
             LOGGER.info("Written to {}", file.getAbsolutePath());
             return true;
         } catch (IOException e) {
